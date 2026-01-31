@@ -61,6 +61,3 @@ Nếu bạn gặp lỗi hoặc có ý kiến đóng góp, vui lòng tạo issue 
 -   Website: [https://cuongit.net](https://cuongit.net)
 -   Profile: [https://me.cuongit.net](https://me.cuongit.net)
 -   GitHub: [https://github.com/cuongyd196](https://github.com/cuongyd196)
-
----
-*Based on [Electron React Boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate)*
