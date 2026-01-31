@@ -4,43 +4,89 @@
   <img src="assets/icon.png" width="100" alt="CIT SysCheck" />
 </p>
 
-**CIT SysCheck** là một công cụ chẩn đoán hệ thống toàn diện được xây dựng bằng Electron và React. Ứng dụng cung cấp khả năng kiểm tra nhanh chóng và chi tiết các thành phần phần cứng của máy tính, giúp kỹ thuật viên và người dùng phổ thông dễ dàng đánh giá tình trạng thiết bị.
+**CIT SysCheck** là một công cụ chẩn đoán hệ thống và tiện ích toàn diện được xây dựng bằng Electron và React. Ứng dụng cung cấp khả năng kiểm tra nhanh chóng các thành phần phần cứng, xem thông tin bản quyền và cung cấp kho ứng dụng cần thiết cho kỹ thuật viên IT.
 
 ## 🚀 Tính năng chính
 
--   **📊 Thông tin hệ thống (System Info)**: Xem chi tiết về Hệ điều hành, CPU, RAM (từng khe cắm), Ổ cứng (S.M.A.R.T status), Card đồ họa, và Mạng.
--   **🔋 Kiểm tra Pin (Battery)**: Theo dõi trạng thái sạc, độ chai pin, dung lượng thiết kế và số chu kỳ sạc.
--   **⌨️ Kiểm tra Bàn phím (Keyboard)**: Kiểm tra chức năng của từng phím, ghi nhận lịch sử bấm phím.
--   **🎤 Kiểm tra Micro (Microphone)**: Ghi âm và phát lại để kiểm tra chất lượng thu âm của micro.
--   **📷 Kiểm tra Camera**: Xem trước hình ảnh, chụp ảnh và quay video kiểm tra webcam.
--   **🖥️ Kiểm tra Màn hình (Monitor)**:
-    -   Kiểm tra điểm chết (Dead pixel) với các màu đơn sắc.
-    -   Kiểm tra khả năng hiển thị màu (Gradient).
-    -   Kiểm tra độ sắc nét văn bản (Text Sharpness).
--   **🔊 Kiểm tra Loa (Audio)**:
+### 📊 1. Kiểm tra phần cứng & Hệ thống (System Info)
+-   **Tổng quan**: Xem chi tiết Hệ điều hành, CPU, RAM (chi tiết từng khe), Card đồ họa, Mạng và Ổ cứng.
+-   **Trạng thái bản quyền**:
+    -   Kiểm tra trạng thái kích hoạt Windows và Office.
+    -   Hiển thị chi tiết phiên bản (Edition).
+    -   Tích hợp công cụ kích hoạt (MAS) nhanh chóng (Chỉ hiển thị trên Windows).
+
+### 🛠 2. Bộ công cụ chẩn đoán (Diagnostics)
+-   **🔋 Pin (Battery)**: Trạng thái sạc, độ chai (Health), dung lượng thiết kế, chu kỳ sạc.
+-   **⌨️ Bàn phím (Keyboard)**: Kiểm tra phím kẹt, liệt, lịch sử bấm phím.
+-   **🎤 Micro (Microphone)**: Ghi âm, phát lại, kiểm tra biểu đồ sóng âm.
+-   **📷 Camera**: Xem trước, chụp ảnh, quay video test webcam.
+-   **🖥️ Màn hình (Monitor)**:
+    -   Test điểm chết (Dead pixel).
+    -   Test dải màu (Gradient) và độ sắc nét (Text Sharpness).
+-   **🔊 Loa (Audio)**:
     -   Kiểm tra kênh Stereo (Trái/Phải).
-    -   Quét tần số (Frequency Sweep 20Hz - 20kHz).
-    -   Kiểm tra đồng bộ âm thanh/hình ảnh (Audio Sync).
--   **🌐 Đa ngôn ngữ**: Hỗ trợ đầy đủ tiếng Việt và tiếng Anh.
+    -   Quét dải tần số (Frequency Sweep).
+    -   Kiểm tra độ trễ âm thanh (Sync Test).
 
-## � Tải về (Download)
+### ✨ 3. Tiện ích & Ứng dụng (Utilities & Apps) - Mới
+Kho phần mềm được tuyển chọn kỹ lưỡng cho mọi nền tảng:
+-   **Đa nền tảng**: Tự động hiển thị ứng dụng phù hợp cho **Windows**, **macOS**, và **Linux**.
+-   **Danh mục đa dạng**:
+    -   **Công cụ hệ thống**: 7-Zip, Unikey, Rufus, Homebrew, GParted...
+    -   **Điều khiển từ xa**: TeamViewer, UltraViewer, AnyDesk.
+    -   **Văn phòng & Media**: Office, VLC, OBS, LibreOffice.
+-   **Tính năng nổi bật**:
+    -   Giao diện Glassmorphism hiện đại.
+    -   Liên kết tải xuống chính chủ an toàn.
 
-Chúng tôi hiện tại cung cấp phiên bản đã đóng gói (Executable) cho người dùng cuối. Bạn có thể tải về phiên bản mới nhất tại:
+### 🌐 4. Tính năng khác
+-   **Đa ngôn ngữ**: Chuyển đổi tức thì giữa Tiếng Việt 🇻🇳 và Tiếng Anh 🇺🇸.
+-   **Giao diện hiện đại**: Thiết kế tối màu (Dark mode), thân thiện người dùng.
+
+## 📥 Tải về (Download)
+
+Chúng tôi hiện tại cung cấp phiên bản đã đóng gói cho người dùng cuối. Bạn có thể tải về phiên bản mới nhất tại:
 
 👉 **[GitHub Releases](https://github.com/cuongyd196/cit-syscheck/releases)**
 
-## � Phản hồi & Báo lỗi (Feedback)
+## 🛠 Cài đặt và Sử dụng
+
+Đảm bảo bạn đã cài đặt [Node.js](https://nodejs.org/) trên máy (khuyên dùng bản LTS).
+
+1.  **Clone dự án**:
+    ```bash
+    git clone https://github.com/cuongyd196/cit-syscheck.git
+    cd cit-syscheck
+    ```
+
+2.  **Cài đặt dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Chạy thử nghiệm (Dev Mode)**:
+    ```bash
+    npm start
+    ```
+
+4.  **Đóng gói bộ cài (Production Build)**:
+    ```bash
+    npm run package
+    ```
+
+## 💬 Phản hồi & Báo lỗi (Feedback)
 
 Nếu bạn gặp lỗi hoặc có ý kiến đóng góp, vui lòng tạo issue tại đây:
 
 👉 **[Gửi phản hồi / Báo lỗi](https://github.com/cuongyd196/cit-syscheck/issues)**
 
-## �👤 Tác giả
+## 👤 Tác giả
 
 **CuongIT**
 
--   Website: [https://me.cuongit.net](https://me.cuongit.net)
+-   Website: [https://cuongit.net](https://cuongit.net)
+-   Profile: [https://me.cuongit.net](https://me.cuongit.net)
 -   GitHub: [https://github.com/cuongyd196](https://github.com/cuongyd196)
 
 ---
-*Based on [Electron React Boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate.git)*
+*Based on [Electron React Boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate)*
