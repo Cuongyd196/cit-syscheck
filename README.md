@@ -37,7 +37,7 @@ Kho phần mềm tiện ích cho mọi nền tảng:
     -   **Văn phòng & Media**: Office, VLC, OBS, LibreOffice.
 -   **Tính năng nổi bật**:
     -   Giao diện Glassmorphism hiện đại.
-    -   
+
 ### 🌐 4. Tính năng khác
 -   **Đa ngôn ngữ**: Chuyển đổi tức thì giữa Tiếng Việt 🇻🇳 và Tiếng Anh 🇺🇸.
 -   **Giao diện hiện đại**: Thiết kế tối màu (Dark mode), thân thiện người dùng.
