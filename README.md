@@ -29,16 +29,15 @@
     -   Kiểm tra độ trễ âm thanh (Sync Test).
 
 ### ✨ 3. Tiện ích & Ứng dụng (Utilities & Apps) - Mới
-Kho phần mềm được tuyển chọn kỹ lưỡng cho mọi nền tảng:
--   **Đa nền tảng**: Tự động hiển thị ứng dụng phù hợp cho **Windows**, **macOS**, và **Linux**.
+Kho phần mềm tiện ích cho mọi nền tảng:
+-   **Đa nền tảng**:  Tổng hợp phần mềm tiện ích cho **Windows**, **macOS**, và **Linux**.
 -   **Danh mục đa dạng**:
     -   **Công cụ hệ thống**: 7-Zip, Unikey, Rufus, Homebrew, GParted...
     -   **Điều khiển từ xa**: TeamViewer, UltraViewer, AnyDesk.
     -   **Văn phòng & Media**: Office, VLC, OBS, LibreOffice.
 -   **Tính năng nổi bật**:
     -   Giao diện Glassmorphism hiện đại.
-    -   Liên kết tải xuống chính chủ an toàn.
-
+    -   
 ### 🌐 4. Tính năng khác
 -   **Đa ngôn ngữ**: Chuyển đổi tức thì giữa Tiếng Việt 🇻🇳 và Tiếng Anh 🇺🇸.
 -   **Giao diện hiện đại**: Thiết kế tối màu (Dark mode), thân thiện người dùng.
@@ -48,31 +47,6 @@ Kho phần mềm được tuyển chọn kỹ lưỡng cho mọi nền tảng:
 Chúng tôi hiện tại cung cấp phiên bản đã đóng gói cho người dùng cuối. Bạn có thể tải về phiên bản mới nhất tại:
 
 👉 **[GitHub Releases](https://github.com/cuongyd196/cit-syscheck/releases)**
-
-## 🛠 Cài đặt và Sử dụng
-
-Đảm bảo bạn đã cài đặt [Node.js](https://nodejs.org/) trên máy (khuyên dùng bản LTS).
-
-1.  **Clone dự án**:
-    ```bash
-    git clone https://github.com/cuongyd196/cit-syscheck.git
-    cd cit-syscheck
-    ```
-
-2.  **Cài đặt dependencies**:
-    ```bash
-    npm install
-    ```
-
-3.  **Chạy thử nghiệm (Dev Mode)**:
-    ```bash
-    npm start
-    ```
-
-4.  **Đóng gói bộ cài (Production Build)**:
-    ```bash
-    npm run package
-    ```
 
 ## 💬 Phản hồi & Báo lỗi (Feedback)
 
