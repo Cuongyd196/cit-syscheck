@@ -1,7 +1,7 @@
 # CIT SysCheck
 
 <p align="center">
-  <img src="assets/icon.png" width="100" alt="CIT SysCheck" />
+  <img src="assets/images/icon.png" width="100" alt="CIT SysCheck" />
 </p>
 
 **CIT SysCheck** là một công cụ chẩn đoán hệ thống và tiện ích toàn diện cho máy tính. Ứng dụng cung cấp khả năng kiểm tra nhanh chóng các thành phần phần cứng, xem thông tin bản quyền và cung cấp kho ứng dụng cần thiết cho người dùng và kỹ thuật viên IT.
