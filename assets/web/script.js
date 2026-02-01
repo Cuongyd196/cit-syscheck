@@ -1,40 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
     // === THEME TOGGLE FUNCTIONALITY ===
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeIcon = themeToggleBtn.querySelector('i');
+    const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
     
     // Check local storage or system preference
     const savedTheme = localStorage.getItem('cit-syscheck-theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
+    // Function to update all icons
+    function updateIcons(theme) {
+        themeToggleBtns.forEach(btn => {
+            const icon = btn.querySelector('i');
+            if (theme === 'light') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    }
+
     // Set initial theme
     if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
         document.documentElement.setAttribute('data-theme', 'light');
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
+        updateIcons('light');
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
+        updateIcons('dark');
     }
 
-    // Toggle event listener
-    themeToggleBtn.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        let newTheme = 'dark';
-        
-        if (currentTheme === 'dark') {
-            newTheme = 'light';
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        } else {
-            newTheme = 'dark';
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
-        }
-        
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('cit-syscheck-theme', newTheme);
+    // Toggle event listener for all buttons
+    themeToggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            let newTheme = 'dark';
+            
+            if (currentTheme === 'dark') {
+                newTheme = 'light';
+            } else {
+                newTheme = 'dark';
+            }
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('cit-syscheck-theme', newTheme);
+            updateIcons(newTheme);
+        });
     });
 
     // === LIGHTBOX FUNCTIONALITY ===
