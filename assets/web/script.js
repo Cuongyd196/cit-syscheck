@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Set initial theme
-    if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
+    // Default to Dark Mode unless user explicitly chose Light
+    if (savedTheme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
         updateIcons('light');
     } else {
